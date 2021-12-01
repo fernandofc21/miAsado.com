@@ -564,6 +564,8 @@ p{
   }
 
 
+  /* MODIFICANDO ELEMENTOS DE BOOTSTRAP */
+
   /* Centrando H2 en index/ Bootstrap */
 
 
@@ -573,4 +575,11 @@ p{
     justify-content: center;
     min-height: 20vh;
   }
+
+  .colorSvg{
+    color: antiquewhite;
+  }
+
+
+
 }
