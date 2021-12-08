@@ -1,14 +1,15 @@
 
+@import "colores";
 
 .formularioContacto{	
 	width: 460px; 
-  height: auto;
-  margin: 15px auto;
+  	height: auto;
+  	margin: 15px auto;
 	border-radius: 10px;  
 	padding-top: 30px;
 	padding-bottom: 20px;  
-  background-color: white; 
-  padding-left: 30px; 
+  	background-color: white; 
+  	padding-left: 30px; 
 }
 
 
@@ -19,30 +20,30 @@ input{
 	border-radius: 5px;  
 	border-style: solid; 
 	border-width: 1px; 
-	border-color: brown; 
+	border-color: $vinotinto; 
 	margin-top: 10px;  
 	padding-left: 10px;
-  margin-bottom: 20px; 
+  	margin-bottom: 20px; 
 }
 
 
 textarea{
-  background-color: #fbfbfb; 
+  	background-color: #fbfbfb; 
 	width: 405px; 
 	height: 150px; 
 	border-radius: 5px;  
 	border-style: solid; 
 	border-width: 1px; 
-	border-color: brown; 
+	border-color: $vinotinto; 
 	margin-top: 10px;  
 	padding-left: 10px;
-  margin-bottom: 20px; 
-  padding-top: 15px; 
+  	margin-bottom: 20px; 
+  	padding-top: 15px; 
 }
 
 
 label{
-  display: block; 
+  	display: block; 
 	float: center; 	
 }
 
@@ -53,7 +54,7 @@ button p{
 
 
 span{
-	color: brown; 
+	color: $vinotinto; 
 }
 
 
@@ -67,8 +68,8 @@ span{
 	font-size: 39px;  
 	text-align: letf; 
 	padding-bottom: 20px; 
-	color: brown;
-  margin: 10px;
+	color: $vinotinto;
+  	margin: 10px;
 }
 
 
