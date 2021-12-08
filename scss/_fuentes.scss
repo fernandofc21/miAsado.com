@@ -1,0 +1,33 @@
+@font-face {
+	font-family: "Bebas-Regular";
+	src: url("../assets/fonts/Bebas-Regular.otf");
+}
+
+@import "colores";
+
+$font:"Bebas-Regular";
+
+h1{
+    font-family: $font;
+}
+
+h2{
+    font-family: $font;
+    font-style: italic;
+}
+  
+p, a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.abs-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 20vh;
+  }
+
+  .colorSvg, .h5ColorBlanco, .pColorBlanco{
+    color:$blanco;
+  }
+

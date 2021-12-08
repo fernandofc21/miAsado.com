@@ -1,0 +1,33 @@
+
+
+@keyframes desplazar {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 18%;
+      width: 100%;
+    }
+  }
+
+  .animacion{
+    animation-duration: 1s;
+    animation-name: desplazar;
+  }
+
+
+  .cardEffect:hover {
+    border: 1px solid brown;
+    box-shadow: 0px 0px 999px 999px rgba(255, 255, 255, 0.5);
+    z-index: 500;
+  }
+
+  .animacionCard:hover{
+      transition: all 0.10s ease-out;
+      box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+      top: -4px;
+      border: 1px solid #cccccc;
+      background-color: white;
+  }
