@@ -12,6 +12,6 @@
 -Se creó un mapa en _colores.scss llamado "$paletaColores" donde se aplicó el map-get() en _navbar.scss, _fuentes.scss y _formulario.scss
 
 
--Se creó un "@mixin borderInputTextArea" en _formulario.scss
+-Se creó un "@mixin borderInputTextArea" sin parametros en _formulario.scss
 
 -Se creó una clase ".estiloInputTextArea" con varios estilos, el cual se aplica un @extend en otras clases en "_formulario.scss"
