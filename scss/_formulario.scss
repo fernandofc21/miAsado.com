@@ -13,31 +13,31 @@
 }
 
 
-input{
+
+.estiloInputTextArea{
 	background-color: #fbfbfb; 
 	width: 408px; 
 	height: 40px; 
 	border-radius: 5px;  
 	border-style: solid; 
 	border-width: 1px; 
-	border-color: $vinotinto; 
+	border-color:map-get($paletaColores, vinotinto);
 	margin-top: 10px;  
 	padding-left: 10px;
   	margin-bottom: 20px; 
+
+}
+
+input{
+	@extend .estiloInputTextArea;
+	
 }
 
 
 textarea{
-  	background-color: #fbfbfb; 
+	@extend .estiloInputTextArea;
 	width: 405px; 
-	height: 150px; 
-	border-radius: 5px;  
-	border-style: solid; 
-	border-width: 1px; 
-	border-color: $vinotinto; 
-	margin-top: 10px;  
-	padding-left: 10px;
-  	margin-bottom: 20px; 
+	height: 150px;  
   	padding-top: 15px; 
 }
 
@@ -54,7 +54,7 @@ button p{
 
 
 span{
-	color: $vinotinto; 
+	color: map-get($paletaColores, vinotinto);
 }
 
 
@@ -68,7 +68,7 @@ span{
 	font-size: 39px;  
 	text-align: letf; 
 	padding-bottom: 20px; 
-	color: $vinotinto;
+	color: map-get($paletaColores, vinotinto);
   	margin: 10px;
 }
 
@@ -96,13 +96,18 @@ p{
 }
 
 
-.formulario input:focus{
+/*Creando un mixin*/
+
+@mixin borderInputTextArea{
 	outline:0;
 	border: 1px solid #97d848;
 }
 
+.formulario input:focus{
+	@include borderInputTextArea;
+}
+
 
 .formulario textarea:focus{
-	outline:0;
-	border: 1px solid #97d848;
+	@include borderInputTextArea;
 }

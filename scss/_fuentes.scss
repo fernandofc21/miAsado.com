@@ -28,6 +28,6 @@ p, a{
   }
 
   .colorSvg, .h5ColorBlanco, .pColorBlanco{
-    color:$blanco;
+    color:map-get($paletaColores, blanco);
   }
 

@@ -1,0 +1,17 @@
+
+*CAMBIOS IMPLEMENTADOS PARA LA ENTREGA: Servidores y SEO para tu sitio
+
+- Se añadieron las etiquetas SEO en todas las páginas del proyecto.
+    index: asado, lomo, bife ancho, vacuno, cerdo, entraña, angus
+    cerdo.html: carre de cerdo, lomo, ribs, cerdo, matambrito
+    contacto.html: contacto, numero, correo
+    hamburguesas.html: hamburguesa, veganas, bacon, burger
+    ubicacion.html: ubicacion, miAsado, direccion, pedidos
+    vacuno.html: asado, lomo, bife ancho, vacuno, FedLot, entraña, angus, carne, res
+
+-Se creó un mapa en _colores.scss llamado "$paletaColores" donde se aplicó el map-get() en _navbar.scss, _fuentes.scss y _formulario.scss
+
+
+-Se creó un "@mixin borderInputTextArea" en _formulario.scss
+
+-Se creó una clase ".estiloInputTextArea" con varios estilos, el cual se aplica un @extend en otras clases en "_formulario.scss"

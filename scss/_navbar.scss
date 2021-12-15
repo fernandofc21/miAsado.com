@@ -13,8 +13,8 @@
   }
 
 nav li a:hover {
-    background: $vinotinto;
-    color: $blanco;
+    background:map-get($paletaColores, vinotinto);
+    background:map-get($paletaColores, blanco);
   }
 
 li{
