@@ -15,3 +15,13 @@
 -Se creó un "@mixin borderInputTextArea" sin parametros en _formulario.scss
 
 -Se creó una clase ".estiloInputTextArea" con varios estilos, el cual se aplica un @extend en otras clases en "_formulario.scss"
+
+
+
+/////////////////////////////////////////////
+
+*CAMBIOS 19/12/21
+
+    -Modificadas las imagenes del carrousel
+    -Eliminado el botón y barra de búsqueda de todas las páginas
+    -
