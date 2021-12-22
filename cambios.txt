@@ -24,4 +24,6 @@
 
     -Modificadas las imagenes del carrousel
     -Eliminado el botón y barra de búsqueda de todas las páginas
-    -
+    -Implementado un solo modelo de cards para los artículos
+    -Solucionado el problema de overflow en varias páginas
+    

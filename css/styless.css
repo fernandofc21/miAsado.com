@@ -1,7 +1,6 @@
 @font-face {
   font-family: "Bebas-Regular";
   src: url("../assets/fonts/Bebas-Regular.otf"); }
-  
 
 /*Aplicando un mapa*/
 h1 {
@@ -18,7 +17,7 @@ p, a {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 20vh; }
+  min-height: 12vh; }
 
 .colorSvg, .h5ColorBlanco, .pColorBlanco {
   color: antiquewhite; }
@@ -153,5 +152,3 @@ p {
 .formulario textarea:focus {
   outline: 0;
   border: 1px solid #97d848; }
-
-
