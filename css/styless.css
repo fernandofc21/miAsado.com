@@ -39,6 +39,9 @@ li {
   list-style-type: none;
   padding: 10px; }
 
+.navbar-brand {
+  margin-right: -18rem; }
+
 /*Aplicando un mapa*/
 @keyframes desplazar {
   from {
