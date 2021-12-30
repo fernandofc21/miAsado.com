@@ -80,6 +80,16 @@ footer {
   color: antiquewhite;
   margin-top: 20px; }
 
+.list-unstyled {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.text-uppercase {
+  display: flex;
+  justify-content: center; }
+
 /*Aplicando un mapa*/
 .formularioContacto {
   width: 460px;
