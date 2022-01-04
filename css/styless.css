@@ -1,3 +1,5 @@
+
+
 @font-face {
   font-family: "Bebas-Regular";
   src: url("../assets/fonts/Bebas-Regular.otf"); }
@@ -12,6 +14,9 @@ h2 {
 
 p, a {
   font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
+.row {
+  margin: 0; }
 
 .abs-center {
   display: flex;
@@ -74,6 +79,7 @@ li {
   border-color: brown; }
 
 body {
+  overflow-x: hidden;
   background-color: #E7E7E7; }
 
 footer {
@@ -165,3 +171,7 @@ p {
 .formulario textarea:focus {
   outline: 0;
   border: 1px solid #97d848; }
+
+.wrapperMobile{
+  overflow-x: hidden;
+}
