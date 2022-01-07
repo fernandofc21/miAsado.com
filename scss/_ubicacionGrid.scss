@@ -1,0 +1,108 @@
+
+/* UBICACION GRID*/
+
+/*VISTA DESKTOP*/
+
+@media only screen and (min-width: 1024px) {
+.contenedorPadre{
+    display: grid;
+    grid-template-areas: 
+    "header nav nav"
+    "titulo titulo titulo"
+    "ubicacion ubicacion ubicacion"
+    "footer footer footer";
+    grid-template-rows: 100px 80px 600px 250px;
+    grid-template-columns: 20% 40% 40%;
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+    padding: 10px;
+  }
+
+  header {
+    grid-area: header;
+  }
+
+  .navBarGrid {
+    grid-area: nav;
+  }
+
+  .divGrid{
+    grid-area: titulo;
+  }
+
+  .sectionGrid{
+      grid-area: ubicacion;
+  }
+
+  .footerGrid {
+    grid-area: footer;
+  }
+  
+}
+
+
+.headerGrid{
+  display: flex;
+  justify-content: center;
+  background-color: #343a40;
+  box-shadow: 0 -1px 30px 0 rgba(0, 0, 0, 0.20), 0 2px 3px 0 rgba(0, 0, 0, 0.10%);
+}
+
+.navBarGrid{
+  display: flex;
+  justify-content:flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #343a40;
+  box-shadow: 0 -1px 30px 0 rgba(0, 0, 0, 0.20), 0 2px 3px 0 rgba(0, 0, 0, 0.10%);
+}
+
+.navBarGrid li a{
+  color: white;
+  display: block;
+  text-decoration: none;
+  padding: .5em 1em;
+}
+
+.navbar-brand{
+  margin: 0;
+}
+
+
+.sectionGrid{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: white;
+  box-shadow: 0 -1px 30px 0 rgba(0, 0, 0, 0.20), 0 2px 3px 0 rgba(0, 0, 0, 0.10%);
+  padding: 15px;
+}
+
+.footerGrid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: brown;
+  box-shadow: 0 -1px 30px 0 rgba(0, 0, 0, 0.20), 0 2px 3px 0 rgba(0, 0, 0, 0.10%);
+  padding: 20px;
+  color: antiquewhite;
+}
+
+.divGrid{
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.dUbicacion{
+  display: flex;
+  justify-content: center;
+}
+
+h5{
+  font-family: Tahoma, sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 0px;
+}
