@@ -1,5 +1,65 @@
 
-/* UBICACION GRID*/
+/* UBICACION.HTML con GRID*/
+
+/*VISTA MOBILE*/
+
+@media only screen and (min-width: 0px) and (max-width: 768px){
+	.contenedorPadre {
+		display: grid;
+		grid-template-areas: 
+		"header"
+		"nav"
+		"titulo"
+		"ubicacion"
+		"footer";
+		grid-template-columns: 100%;
+		grid-template-rows: 100px 360px 100px 350px 550px;
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+    padding: 10px;
+	}
+
+  header {
+    grid-area: header;
+  }
+
+  .navBarGrid {
+    grid-area: nav;
+  }
+
+  .divGrid{
+    grid-area: titulo;
+  }
+
+  .sectionGrid{
+      grid-area: ubicacion;
+  }
+
+  .footerGrid {
+    grid-area: footer;
+  }
+
+  .mapa{
+    height: 100%;
+    width: 100%;
+  }
+
+  .navBarGrid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navBarGrid ul {
+    flex-direction: column;
+  }
+  
+}
+
+
+
+
+
+
 
 /*VISTA DESKTOP*/
 
@@ -37,7 +97,7 @@
   .footerGrid {
     grid-area: footer;
   }
-  
+
 }
 
 
@@ -50,22 +110,27 @@
 
 .navBarGrid{
   display: flex;
-  justify-content:flex-start;
-  flex-direction: row;
-  flex-wrap: wrap;
+  justify-content: space-between;
   background-color: #343a40;
   box-shadow: 0 -1px 30px 0 rgba(0, 0, 0, 0.20), 0 2px 3px 0 rgba(0, 0, 0, 0.10%);
 }
 
+.navBarGrid ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
 .navBarGrid li a{
-  color: white;
-  display: block;
+  color: #d1d2d3;
+  display: inline-block;
   text-decoration: none;
   padding: .5em 1em;
 }
 
 .navbar-brand{
   margin: 0;
+  padding-top: 10px;
 }
 
 
