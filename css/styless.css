@@ -13,6 +13,9 @@ h2 {
 p, a {
   font-family: Verdana, Geneva, Tahoma, sans-serif; }
 
+.row {
+  margin: 0; }
+
 .abs-center {
   display: flex;
   align-items: center;
@@ -38,6 +41,9 @@ nav li a:hover {
 li {
   list-style-type: none;
   padding: 10px; }
+
+.navbar-brand {
+  margin-right: -18rem; }
 
 /*Aplicando un mapa*/
 @keyframes desplazar {
@@ -80,6 +86,16 @@ footer {
   color: antiquewhite;
   margin-top: 20px; }
 
+.list-unstyled {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.text-uppercase {
+  display: flex;
+  justify-content: center; }
+
 /*Aplicando un mapa*/
 .formularioContacto {
   width: 460px;
@@ -93,8 +109,6 @@ footer {
 
 .estiloInputTextArea, input, textarea {
   background-color: #fbfbfb;
-  width: 408px;
-  height: 40px;
   border-radius: 5px;
   border-style: solid;
   border-width: 1px;
@@ -104,8 +118,8 @@ footer {
   margin-bottom: 20px; }
 
 textarea {
-  width: 405px;
-  height: 150px;
+  width: 100%;
+  height: 100px;
   padding-top: 15px; }
 
 label {
@@ -124,7 +138,6 @@ span {
 
 .tituloFormulario {
   font-size: 39px;
-  text-align: letf;
   padding-bottom: 20px;
   color: brown;
   margin: 10px; }
@@ -152,3 +165,117 @@ p {
 .formulario textarea:focus {
   outline: 0;
   border: 1px solid #97d848; }
+
+.wrapperMobile {
+  overflow-x: hidden; }
+
+/* UBICACION.HTML con GRID*/
+/*VISTA MOBILE*/
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+  .contenedorPadre {
+    display: grid;
+    grid-template-areas: "header" "nav" "titulo" "ubicacion" "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 360px 100px 350px 550px;
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+    padding: 10px; }
+  header {
+    grid-area: header; }
+  .navBarGrid {
+    grid-area: nav; }
+  .divGrid {
+    grid-area: titulo; }
+  .sectionGrid {
+    grid-area: ubicacion; }
+  .footerGrid {
+    grid-area: footer; }
+  .mapa {
+    height: 100%;
+    width: 100%; }
+  .navBarGrid {
+    flex-direction: column;
+    align-items: center; }
+  .navBarGrid ul {
+    flex-direction: column; } }
+
+/*VISTA DESKTOP*/
+@media only screen and (min-width: 1024px) {
+  .contenedorPadre {
+    display: grid;
+    grid-template-areas: "header nav nav" "titulo titulo titulo" "ubicacion ubicacion ubicacion" "footer footer footer";
+    grid-template-rows: 100px 80px 600px 250px;
+    grid-template-columns: 20% 40% 40%;
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+    padding: 10px; }
+  header {
+    grid-area: header; }
+  .navBarGrid {
+    grid-area: nav; }
+  .divGrid {
+    grid-area: titulo; }
+  .sectionGrid {
+    grid-area: ubicacion; }
+  .footerGrid {
+    grid-area: footer; } }
+
+.headerGrid {
+  display: flex;
+  justify-content: center;
+  background-color: #343a40;
+  box-shadow: 0 -1px 30px 0 rgba(0, 0, 0, 0.2), 0 2px 3px 0 rgba(0, 0, 0, 0.1); }
+
+.navBarGrid {
+  display: flex;
+  justify-content: space-between;
+  background-color: #343a40;
+  box-shadow: 0 -1px 30px 0 rgba(0, 0, 0, 0.2), 0 2px 3px 0 rgba(0, 0, 0, 0.1); }
+
+.navBarGrid ul {
+  list-style: none;
+  padding: 0;
+  display: flex; }
+
+.navBarGrid li a {
+  color: #d1d2d3;
+  display: inline-block;
+  text-decoration: none;
+  padding: .5em 1em; }
+
+.navbar-brand {
+  margin: 0;
+  padding-top: 10px; }
+
+.sectionGrid {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: white;
+  box-shadow: 0 -1px 30px 0 rgba(0, 0, 0, 0.2), 0 2px 3px 0 rgba(0, 0, 0, 0.1);
+  padding: 15px; }
+
+.footerGrid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: brown;
+  box-shadow: 0 -1px 30px 0 rgba(0, 0, 0, 0.2), 0 2px 3px 0 rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  color: antiquewhite; }
+
+.divGrid {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem; }
+
+.dUbicacion {
+  display: flex;
+  justify-content: center; }
+
+h5 {
+  font-family: Tahoma, sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 0px; }

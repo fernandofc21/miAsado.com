@@ -27,3 +27,18 @@
     -Implementado un solo modelo de cards para los artículos
     -Solucionado el problema de overflow en varias páginas
     
+*CAMBIOS 29/12/21
+
+    -Incluido el logo de la página en el header
+    -Modificaciones en la grilla del footer, todas las columnas con las mismas dimensiones y los iconos de las RRSS ahora se ven en horizontal.
+    -Eliminado el margin en ".row" que ocasionaban scroll horizontal en las páginas en versión escritorio.
+    -Creado una clase "div wrapper" dentro del body y luego aplicado un overflow-x: hidden para solucionar scroll horizontal en versión mobile.
+
+*CAMBIOS 04/01/22
+
+    -Modificado el formulario para que sea responsive en mobile y escritorio.
+    -Eliminado el  carrousel en ubicacion.html
+
+*CAMBIOS 05/01/22
+
+    
